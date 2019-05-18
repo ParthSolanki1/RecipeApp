@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  change = "Recipes";
+  
+  changeItem(show: {changeTo: string}) {
+    this.change = show.changeTo;
+  }
 }
